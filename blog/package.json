@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Blog para iniciantes",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "C:\\Users\\Sabrina\\Documents\\projetos\\blog"
+  },
+  "author": "Sabrina de Lima Campos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "connect": "^3.6.6",
+    "consign": "^0.1.6",
+    "cookie-session": "^2.0.0-beta.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.15",
+    "morgan": "^1.9.1"
+  },
+  "dev-Dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --timeout 10000"
+  }
+}

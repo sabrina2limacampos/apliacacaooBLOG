@@ -1,0 +1,17 @@
+<% include ../header %>
+<header>
+<h2>BLOG - POSTAGEM</h2>
+</header>
+<section>
+<form action="/post/<%- id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+<p><label>Descrição</label><%- post.Descrição %></p>
+<p><label>Data</label><%- post.Data %></p>
+<p>
+<button type="submit">Excluir</button>
+<a href="/post/<%- id %>/editar">Editar</a>
+</p>
+</form>
+</section>
+
+<% include ../footer %>

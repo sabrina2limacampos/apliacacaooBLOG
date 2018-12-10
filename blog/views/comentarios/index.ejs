@@ -1,0 +1,33 @@
+<% include ../header %>
+<header>
+<h2>BLOG-comentários</h2>
+</header>
+<section>
+<form action="/comentario" method="post">
+<input type="text" name="comentario[descricao]" placeholder="Nome">
+<input type="text" name="comentario[data]" placeholder="Data">
+<button type="submit">Cadastrar</button>
+</form>
+<table>
+<thead>
+<tr>
+<th>Descricao</th>
+<th>Data</th>
+<th>Ação</th>
+</tr>
+</thead>
+<tbody>
+<% contatos.forEach(function(comentario, index) { %>
+<tr>
+<td><%- comentario.descricao %></td>
+<td><%- comentario.descricao %></td>
+<td>
+<a href="/comentario/<%- index %>">Detalhes</a>
+        </td>
+        </tr>
+        <% }) %>
+        </tbody>
+        </table>
+        </section>
+      
+        <% include ../footer %>

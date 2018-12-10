@@ -1,0 +1,27 @@
+<% include ../header %>
+    <head>
+        <h1>BLOG</h1>
+        <h4>Bem-vindo!</h4>
+    </head>
+    
+    
+        <form action="/entrar" method="post">
+            <textarea type="text" name="post[descricao]" placeholder="Digite a descricao">
+            <br>            
+            <br>
+            <button type="submit" value="Add Post">Add Post</button>
+        </form>
+   
+        
+       <!-- <%/ for(let i = 0; i < posts.length; i++) { %>
+            <article>
+                <p><%= posts[i].body %></p>
+            </article>
+        <% } %> 
+        <form action="addPost">
+            <textarea name="body"></textarea>
+            <input type="submit" value="Add Post" />
+        </form>-->
+   
+<% include ../footer %>
+

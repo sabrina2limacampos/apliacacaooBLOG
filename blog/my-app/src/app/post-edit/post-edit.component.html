@@ -1,0 +1,13 @@
+<div>
+  <h2>Post Edit</h2>
+  <div>
+    <label>Post Descrição:
+      <input [(ngModel)]="postData.post_desc" placeholder="Post Descrição"/>
+    </label><br>
+  
+    <label>Post Data:
+      <input [(ngModel)]="postData.post_data" placeholder="Post Data"/>
+    </label><br>
+  </div>
+  <button (click)="updatePost()">Update</button>
+</div>
